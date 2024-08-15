@@ -2,7 +2,7 @@ PRODUCT_PACKAGES += \
   sscoredump \
 
 # When neither AOSP nor factory targets
-ifeq (,$(filter aosp_% factory_% lineage_%, $(TARGET_PRODUCT)))
+ifeq (,$(filter aosp_% factory_% lineage_% bliss_%, $(TARGET_PRODUCT)))
   PRODUCT_PACKAGES += SSRestartDetector
 endif
 
